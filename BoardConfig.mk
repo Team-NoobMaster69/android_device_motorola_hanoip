@@ -8,5 +8,8 @@ BOARD_VENDOR := motorola
 
 DEVICE_PATH := device/motorola/hanoip
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
+
 # Inherit from proprietary files
 include vendor/motorola/hanoip/BoardConfigVendor.mk
